@@ -1,0 +1,105 @@
+
+body {
+    background-color: lightgray;
+}
+
+/* mobile, tablet, and small windows: stack content*/
+@media only screen and (max-width: 800px){
+    #headshot-container{
+        margin-top: 64px;
+    }
+    #headshot{
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+        border-radius: 5%;
+        box-shadow: 5px 5px 10px rgba(1, 1, 1, .5);
+    }
+    #attention-grabber{
+        margin: 32px;
+        font-size: 8vw;
+    }
+    #about-text{
+        margin: 32px;
+        font-size: 3.5vw;
+    }
+    
+}
+
+/* larger screens and desktop: split view between headshot and text */
+@media only screen and (min-width: 801px){
+    #about-me-content{
+        display: flex;
+        margin-top: 64px;
+    }
+    #headshot-container{
+        width: 50%;
+        align-content: center;
+    }
+    #headshot{
+        display: block;
+        width: 80%;
+        max-width: 450px;
+        height: auto;
+        margin: auto;
+        border-radius: 5%;
+        box-shadow: 5px 5px 10px rgba(1, 1, 1, .5);
+    }
+    #text-container{
+        width: 50%;
+    }
+    #attention-grabber{
+        margin: 32px;
+        font-size: 4vw;
+    }
+    #about-text{
+        margin: 32px;
+        font-size: 2vw;
+    }
+     
+}
+
+/* set max image and font size */
+@media only screen and (min-width: 1125px){
+    #attention-grabber{
+        width: 500px;
+        font-size: 44px;
+    }
+    #about-text{
+        width: 500px;
+        font-size: 22px;
+    }
+    
+}
+
+/* same for all responsiveness */
+#skills-and-courses{
+    display: block;
+    align-content: center;
+}
+#skills-and-courses > h1{
+    align-self: center;
+    text-align: center;
+}
+.info-list{
+    margin: auto;
+    text-align: center;
+}
+li{
+    margin-top: 8px;
+    font-size: 18px;
+}
+hr{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+footer{
+    padding: 16px;
+    margin-top: 64px;
+    background-color: #16324f;
+    display: flex;
+    justify-content: space-around;
+}
+footer > h3{
+    color: white;
+}

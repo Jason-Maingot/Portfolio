@@ -1,0 +1,31 @@
+/* This file is for styling for all page, page specific styling goes in their own stylesheet */
+
+/* Reset all styling for margin and padding */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    background-color: #16324f;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: left;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    justify-self: center;
+    font-size: large;
+    align-self: center;
+}
+nav > a:hover {
+    color: #95B46A;
+}
+.nav-seperator {
+    border-left: solid #ffffff;
+}
