@@ -1,0 +1,45 @@
+.introduction-section{
+    margin-top: 8px;
+    background-color: #16324f;
+    height: 500px;
+    align-content: center;
+}
+
+.introduction-text{
+    color: #ffffff;
+    font-size: 72px;
+    width: 700px;
+    margin: auto;
+}
+
+.gallery-header{
+    font-size: 60px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.project-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    width: 500px;
+    height: 400px;
+    margin: 16px;
+}
+
+.project-card > img{
+    width: 500px;
+    height: 350px;
+}
+
+.project-card > h3{
+    height: 50px;
+    margin-top: -4px;
+    padding-left: 8px;
+    background-color: #16324f;
+    color: #ffffff;
+    align-content: center;
+}
