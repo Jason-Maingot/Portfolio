@@ -12,6 +12,32 @@
     margin: auto;
 }
 
+.mission-statement{
+    padding: 16px;
+}
+
+.mission-statement > p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    line-height: 125%;
+}
+
+.areas-of-work{
+    display: flex;
+    padding: 16px;
+    justify-content: space-around;
+}
+
+.work-area {
+    padding: 8px;
+    width: 200px;
+}
+
+.work-area > p {
+    padding-top: 8px;
+}
+
 .gallery-header{
     font-size: 60px;
     margin-top: 32px;
