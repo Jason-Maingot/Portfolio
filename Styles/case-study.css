@@ -1,13 +1,24 @@
 h1 {
     font-size: 72px;
-    margin: 32px;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
 h2 {
     font-size: 32px;
-    margin-top: 32px;
+    margin-top: 64px;
     margin-left: 32px;
     margin-right: 32px;
+    margin-bottom: 24px;
+}
+
+.title_caption{
+    font-size: 48px;
+    margin-top: 0px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 24px;
 }
 
 p {
@@ -22,7 +33,7 @@ li{
     font-size: 24px;
     margin-left: 32px;
     margin-right: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
     line-height: 28px;
 }
 
@@ -35,7 +46,21 @@ ol
     line-height: 28px;
 }
 
+ul
+{
+    font-size: 24px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    line-height: 28px;
+}
+
 img {
     display: block;
     margin: auto;
+}
+
+.nextButton {
+    text-align: right;
+    margin-right: 32px;
 }

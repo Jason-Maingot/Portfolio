@@ -12,30 +12,52 @@
     margin: auto;
 }
 
+.intro-big {
+    font-size: 80px;
+}
+
+.intro-small {
+    font-size: 36px;
+}
+
 .mission-statement{
     padding: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .mission-statement > p {
     font-size: 18px;
     margin-bottom: 8px;
     margin-top: 8px;
-    line-height: 125%;
+    line-height: 150%;
 }
 
 .areas-of-work{
     display: flex;
     padding: 16px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .work-area {
     padding: 8px;
-    width: 200px;
+    width: 250px;
+}
+
+.work-area > h3 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 48px;
 }
 
 .work-area > p {
     padding-top: 8px;
+    text-align: center;
+}
+
+.work-area > img {
+    width: 250px;
+    height: 250px;
 }
 
 .gallery-header{

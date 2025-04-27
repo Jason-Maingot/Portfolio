@@ -51,6 +51,9 @@
         margin: 32px;
         font-size: 2vw;
     }
+    #about-text > p {
+        margin-bottom: 16px;
+    }
      
 }
 
@@ -61,7 +64,7 @@
         font-size: 44px;
     }
     #about-text{
-        width: 500px;
+        width: 1000px;
         font-size: 22px;
     }
     
@@ -83,6 +86,7 @@
 li{
     margin-top: 8px;
     font-size: 18px;
+    list-style-type: none;
 }
 hr{
     margin-top: 32px;

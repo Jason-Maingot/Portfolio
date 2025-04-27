@@ -6,6 +6,15 @@
     padding: 0%;
 }
 
+/* Font setting */
+h1, h2, h3, p, li, nav > a {
+    font-family: "Montserrat", sans-serif;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
 /* Navigation Bar */
 nav {
     display: flex;
@@ -30,9 +39,11 @@ nav > a:hover {
     border-left: solid #ffffff;
 }
 
-/* Body */
+/* Body and main content section */
 body {
-    background-color: lightgray;
+    background-color: lightgrey;
+}
+.main-body {
     justify-self: center;
     @media screen and (min-width: 600px) {
         width: 600px;
@@ -56,7 +67,15 @@ footer{
 footer > h3{
     color: white;
 }
-footer > a:visited{
-        color: white;
-        text-decoration: none;
+footer > h3 > a:link{
+    color: white;
+}
+footer > h3 > a:visited{
+    color: white;
+}
+footer > h3 > a:active{
+    color: white;
+}
+footer > h3 > a:hover{
+    color: greenyellow;
 }
