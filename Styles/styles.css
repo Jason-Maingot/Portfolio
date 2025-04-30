@@ -79,3 +79,7 @@ footer > h3 > a:active{
 footer > h3 > a:hover{
     color: greenyellow;
 }
+
+.link-icon {
+    display: inline;
+}
