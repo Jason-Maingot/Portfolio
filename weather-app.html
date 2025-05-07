@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jason Maingot Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Styles/styles.css">
+        <link rel="stylesheet" href="Styles/case-study.css">
+    </head>
+    
+    <!-- Body of Website -->
+    <body>
+
+        <!-- Top Navigation Bar with Logo and Major Page Links -->
+        <nav>
+            <!-- My Logo -->
+            <a href="./index.html"><img src="assets/images/Logo.png" alt=""></a>
+            <div class="nav-seperator"></div>
+            <a href="./projects.html">PROJECTS</a>
+            <div class="nav-seperator"></div>
+            <a href="./about-me.html">ABOUT ME</a>
+            <div class="nav-seperator"></div>
+        </nav>
+
+        <!-- Main body of Landing Page -->
+        <div class="main-body">
+            <!-- Title -->
+            <h1>Jason's Weather App</h1>
+            <h2 class="title_caption">A Flutter App Experiment Using Real-time data</h2>
+
+            <h2 class="bolded">Overview & Role</h2>
+            <p>
+                &emsp;This project is a mobile weather application built using the Dart programming language and the Flutter framework. The primary objective was to deepen my understanding of Flutter, particularly features I was less familiar with—such as streaming live data from the web and managing state across multiple Flutter “pages.”
+            </p>
+            <p>
+                &emsp;I served as the sole developer and designer on this project, overseeing all aspects of development, UI design, and implementation.
+
+            <h2 class="bolded">Web API Integration & Design Process</h2>
+            <p>
+                &emsp;This was my first time integrating a web API to stream live data into a mobile application. I chose to create a weather app inspired by the default weather apps found on most smartphones. I utilized the National Weather Service (NWS) public API, which provides real-time weather data for various U.S. locations near major weather stations.
+            </p>
+            <p>
+                &emsp;While the API offered key data points—like temperature, wind speed, precipitation, and brief condition descriptions—it lacked the detailed insights available in more advanced weather apps. To address this, I designed wireframes that balanced simplicity and usability, taking inspiration from existing weather apps while working within the constraints of Flutter's layout system.
+            </p>
+            <img class="single-picture" src="assets/images/Weather app wireframe.JPG" alt="">
+            <p class="image-caption">A wireframe sketch used to desing the app</p>
+            <p>
+                &emsp;Integrating the API and displaying the data cleanly proved to be a technical challenge. I leaned heavily on the official Dart and Flutter documentation, as well as community examples, to resolve bugs and ensure the data rendered accurately and efficiently.
+            </p>
+
+            <h2 class="bolded">Final Deliverable</h2>
+            <p>
+                &emsp;Once the core functionality was stable, I focused on visual design and user experience. I selected a blue-dominant color palette, associating it with the sky and common weather visuals. To enhance the interface:
+            </p>
+            <ul>
+                <li>I added atmospheric background images</li>
+                <li>Applied rounded corners and transparency to content boxes</li>
+                <li>Adjusted typography and spacing to improve readability and visual balance</li>
+            </ul>
+            <p>
+                &emsp;The result was a clean, responsive, and informative weather app with a polished front-end experience.
+            </p>
+            <div class="double-picture">
+                <img src="assets/images/WeatherAppHome.PNG" alt="">
+                <img src="assets/images/WeatherAppCurrent.PNG" alt="">
+            </div>
+            <p class="image-caption">The home page and current forecast view</p>
+
+            <div class="double-picture">
+                <img src="assets/images/WeatherAppHourly.PNG" alt="">
+                <img src="assets/images/WeatherAppWeekly.PNG" alt="">
+            </div>
+            <p class="image-caption">The hourly and weekly forecasts</p>
+
+            <h2 class="bolded">Next Steps</h2>
+            <p>
+                &emsp;This project was primarily a personal learning exercise, but it opened up opportunities for future improvement. Possible next steps include:
+            </p>
+            <ul>
+                <li>Consolidating content into a single scrollable view for better UX</li>
+                <li>Leveraging Flutter’s cross-platform capabilities to deploy the app on both Android and iOS, as well as web</li>
+                <li>Expanding the use of APIs to include more detailed weather insights or additional user features</li>
+            </ul>
+            <h3 class="nextButton"><a href="./rtm.html">See Next Project -></a></h3>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <h3>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/jason-maingot/">https://www.linkedin.com/in/jason-maingot/</a><img class="link-icon" width="24" src="assets/images/external-link-icon.png" alt=""></h3>
+        </footer>
+    </body>
+
+</html>
