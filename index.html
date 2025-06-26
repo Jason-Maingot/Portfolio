@@ -1,94 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jason Maingot Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Styles/styles.css">
-        <link rel="stylesheet" href="Styles/landing-page.css">
-    </head>
-    
-    <!-- Body of Website -->
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-        <!-- Top Navigation Bar with Logo and Major Page Links -->
-        <nav>
-            <!-- My Logo -->
-            <a href="./index.html"><img src="assets/images/Logo.png" alt=""></a>
-            <div class="nav-seperator"></div>
-            <a href="./projects.html">PROJECTS</a>
-            <div class="nav-seperator"></div>
-            <a href="./about-me.html">ABOUT ME</a>
-            <div class="nav-seperator"></div>
-        </nav>
+    <link rel="stylesheet" href="Styles/default-styling.css">
+    <link rel="stylesheet" href="Styles/landing-page.css">
+</head>
+<body>
 
-        <!-- Main body of Landing Page -->
-        <div class="main-body">
-            <!-- Top part of page with introduction text -->
-            <div class="introduction-section">
-                <h1 class="introduction-text"><span class="intro-big">Hi, I'm<br> Jason Maingot</span><br><span class="intro-small">an XR, Web, and Game Developer</span></h1>
-            </div>
+    <!--The logo and navigation options, fixed on scroll-->
+    <div id="menu">
+        <h1><a href="index.html">&emsp;<span class="logo-white">{</span>Jason</a></h1>
+        <h1><a href="index.html">Maingot<span class="logo-white"> }</a></span></h1>
+        <br>
+        <h3><a href="projects.html">Projects</a></h3>
+        <h3><a href="about-me.html">About</a></h3>
+    </div>
 
-            <!-- Mission statement -->
-            <div class="mission-statement">
-                <p>
-                    &emsp;I am an Extended Reality(XR), Web, and Game Developer. 
-                    My focus is creating fun and interactive experiences thorugh the power of innovative technology.
-                    Interactivity allows experiences to become more engaging, allowing stories to be told on a 
-                    deeper level, learning to become easier and more hands-on, or just making a once tedious task less so.
-                </p>
-                <!-- <p>
-                    &emsp;My passion for interactive experiences stems from my background of creating things as a child, 
-                    and my current experience at the University of Miami working towards a degree in Interactive Media and 
-                    Computer Science.
-                </p> -->
-            </div>
+    <!--The looping GIF at the top of the page-->
+    <div id="banner">
+        <img src="Assets/Images/JCM Portfolio Animation.gif" alt="">
+        <div id="banner-grid">
+            <p><span id="banner-highlight">I’m a developer specializing in Extended Reality (XR), web, and games, </span>creating immersive, interactive experiences through innovative technology. I use interactivity to deepen storytelling, make learning more intuitive, and transform everyday tasks into something unexpectedly engaging.</p>
+        </div>
+    </div>
 
-            <!-- Small section for each area I of development I work in -->
-             <div class="areas-of-work">
-                <div class="work-area">
-                    <h3>XR</h3>
-                    <img width="250" height="250" src="assets/images/VR Icon.png" alt="">
-                    <p>XR is my main focus as a developer. From when I discovered VR almost 10 years ago, to taking classes and internships creating VR and AR experiences, XR is a field I love and eager to contribute to as it evolves.</p>
-                </div>
-                <div class="work-area">
-                    <h3>Web</h3>
-                    <img width="250" height="250" src="assets/images/Web Icon.png" alt="">
-                    <p>I use the internet in almost every facet of my life, whether through a web browser or an app. I seek to create useful and convenient programs that help people with tasks they find difficult or tedious.</p>
-                </div>
-                <div class="work-area">
-                    <h3>Game</h3>
-                    <img width="250" height="250" src="assets/images/Game Icon.png" alt="">
-                    <p>I have been playing video games as a hobby for most of my life, and been making games and using game engines for over a decade. Turning my ideas into exciting and fun experiences is one of my favorite ways to express myself.</p>
-                </div>
-             </div>
+    <!--The main content of the page arrnged on a 12 column grid-->
+    <div id="grid">
 
-            <!-- Featured Projects gallery -->
-            <h1 class="gallery-header">Featured Projects</h1>
-            <div class="project-gallery">
-                <a href="./stress-gen.html" class="project-card">
-                    <img src="assets/stress-gen/Stress Gen In Simulation.PNG" alt="">
-                    <h3>Stress Generator</h3>
-                </a>
-                <a href="./weather-app.html" class="project-card">
-                    <img src="assets/images/WeatherAppCurrent.PNG" alt="">
-                    <h3>Jason's Weather App</h3>
-                </a>
-                <a href="./rtm.html" class="project-card">
-                    <img src="assets/images/RTM logo.png" alt="">
-                    <h3>Return To Manufacturer</h3>
-                </a>
-            </div>
-
+        <!--The areas of work I have experience in-->
+        <img class="icon" id="icon1" src="Assets/Images/VR Icon.png" alt="">
+        <div class="icon-caption" id="icon-caption1">
+            <p class="icon-caption-header">XR</p>
+            <p>Bringing interactive worlds to life with experiences that feel real, exciting, and unforgettable.</p>
+        </div>
+        <img class="icon" id="icon2" src="Assets/Images/Web Icon.png" alt="">
+        <div class="icon-caption" id="icon-caption2">
+            <p class="icon-caption-header">Web</p>
+            <p>Building engaging websites and web apps that connect ideas to people in fresh, intuitive ways.</p>
+        </div>
+        <img class="icon" id="icon3" src="Assets/Images/Game Icon.png" alt="">
+        <div class="icon-caption" id="icon-caption3">
+            <p class="icon-caption-header">Games</p>
+            <p>Designing games that spark creativity, pull players in, and make every interaction count.</p>
         </div>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <h3>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/jason-maingot/">https://www.linkedin.com/in/jason-maingot/</a><img class="link-icon" width="24" src="assets/images/external-link-icon.png" alt=""></h3>
-        </footer>
-    </body>
+        <!--Featured Projects-->
+        <h1 id="section-header">
+            Featured Projects
+        </h1>
+        <img class="project-thumbnail" id="thumbnail1" src="Assets/Stress Generator/Stress Gen Thumbnail.jpg" alt="">
+        <div class="project-caption" id="project-caption1">
+            <p class="project-caption-header"><a href="stress-generator.html">Stress Generator</a></p>
+            <p>Developed a simulated rope bridge crossing to help researchers trigger and study stress responses using the HP Omnicept headset. The system captures real-time biometric data and researcher annotations, providing detailed insights for later analysis.</p>
+        </div>
+        <img class="project-thumbnail" id="thumbnail2" src="Assets/Slit Lamp/Slit Lamp Thumbnail.JPG" alt="">
+        <div class="project-caption" id="project-caption2">
+            <p class="project-caption-header"><a href="slit-lamp.html">Slit Lamp Simulator</a></p>
+            <p>Created a virtual version of a slit lamp, a critical diagnostic tool used by ophthalmologists, to give medical students hands-on practice in a virtual environment. Because physical slit lamps are often in use and hard to access, this simulation lets students train more often and with more flexibility.</p>
+        </div>
+        <img class="project-thumbnail" id="thumbnail3" src="Assets/RTM/RTM Thumbnail.PNG" alt="">
+        <div class="project-caption" id="project-caption3">
+            <p class="project-caption-header"><a href="rtm.html">Return to Manufacturer</a></p>
+            <p>Led the design and development of a fast-paced delivery game featuring a boomerang weapon and a forward-and-backward dash mechanic—all within 48 hours. Submission for Game/Music Jam 2021.</p>
+        </div>
 
+        <!--Footer Stuff-->
+        <div id="linkedin-link">
+            <p>Get in touch</p>
+            <h1><a href="https://www.linkedin.com/in/jason-maingot/">LinkedIn</a></h1>
+        </div>
+        <p id="back-to-top"><a href="#banner">Back to top</a></p>
+    </div>
+</body>
 </html>

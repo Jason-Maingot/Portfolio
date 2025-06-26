@@ -1,88 +1,55 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jason Maingot Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Styles/styles.css">
-        <link rel="stylesheet" href="Styles/about-me.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <link rel="stylesheet" href="Styles/default-styling.css">
+    <link rel="stylesheet" href="Styles/about-me.css">
+</head>
+<body>
     
+    <!--The logo and navigation options, fixed on scroll-->
+    <div id="menu">
+        <h1><a href="index.html">&emsp;<span class="logo-white">{</span>Jason</a></h1>
+        <h1><a href="index.html">Maingot<span class="logo-white"> }</a></span></h1>
+        <br>
+        <h3><a href="projects.html">Projects</a></h3>
+        <h3><a href="about-me.html">About</a></h3>
+    </div>
 
+    <!--The colored banner at the top of the page and header-->
+    <div id="banner">
+        <div id="banner-grid">
+            <h1>I'm an XR and web developer with a passion for crafting immersive digital experiences.</h1>
+        </div>
+    </div>
 
-    <!--Body of Website-->
-    <body>
+    <div id="grid">
 
-        <!--Top Navigation Bar with Logo and Major Page Links-->
-        <nav>
-            <!--My Logo-->
-            <a href="./index.html"><img src="assets/images/Logo.png" alt=""></a>
-            <div class="nav-seperator"></div>
-            <a href="./projects.html">PROJECTS</a>
-            <div class="nav-seperator"></div>
-            <a href="./about-me.html">ABOUT ME</a>
-            <div class="nav-seperator"></div>
-        </nav>
+        <!--Headshot and introduction-->
+        <img id="headshot" src="Assets/Images/Headshot.JPG" alt="">
+        <p class="about-me-blurb">Born and raised in Miami, I graduated from the University of Miami with a dual major in Computer Science and Interactive Media and a minor in Game Design — basically, the perfect recipe for building cool digital experiences.</p>
+        <p class="about-me-blurb">I’ve been hooked on programming since I was a kid, constantly chasing new languages, frameworks, and ways to bring ideas to life. Whether it's crafting immersive XR experiences, building sleek websites, or developing games just for fun, I’m always looking for new ways to push the boundaries of what technology can do</p>
+        <p class="about-me-blurb">When I'm not deep in code, you’ll probably find me experimenting with game design projects or dreaming up the next big interactive idea. With a strong tech foundation and a love for creativity, I’m here to keep exploring, building, and making experiences that stick with you.</p>
 
-            <!--Main body of About Me Page-->
-        <div class="main-body">
-            <div id="about-me-content">
-                <!--Headshot / photo-->
-                <div id="headshot-container">
-                    <img src="assets/images/Headshot.JPG" alt="" id="headshot">
-                </div>
-                <!--Text-->
-                <div id="text-container">
-                    <!--Attention catcher-->
-                    <h1 id="attention-grabber">
-                        <span id="introduction">I'm Jason Maingot,</span>
-                        <br>
-                        an XR and web developer with a passion for crafting immersive digital experiences. 
-                    </h1>
-                </div>
-            </div>
-            <div id="about-text">
-                <p>
-                    &emsp;Born in Miami, Florida, I graduated with a dual major in Computer Science and Interactive Media, with a minor in Game Design, at the University of 
-                    Miami. From a young age, I was fascinated by programming and has continuously sought to expand my knowledge, eagerly learning new coding languages 
-                    and frameworks. 
-                </p>
-                <p>
-                    &emsp;My curiosity and drive fuel my ambition to create unique and engaging interactive experiences that push the boundaries of technology.
-                    Beyond my professional and academic work, I enjoy game development as a hobby, always striving to bring creative and innovative ideas to life. 
-                    With a strong technical foundation and a passion for exploration, I am eager to contribute to the evolving fields of web and XR development.
-                </p>
-            </div>
-
-            <hr>
-
-            <!-- skill and courses list -->
-            <div id="skills-and-courses">
-                <h1>Hard Skills</h1>
-                <ul class="info-list">
-                    <li><div>
-                        <img width="100" src="assets/programming logos/c-logo.png" alt="c logo">
-                        <img width="100" src="assets/programming logos/c-sharp-logo.png" alt="c sharp logo">
-                        <img width="100" src="assets/programming logos/java-logo.jpg" alt="java logo">
-                        <img width="100" src="assets/programming logos/html-logo.png" alt="">
-                        <img width="100" src="assets/programming logos/css-logo.jpg" alt="">
-                        <img width="100" src="assets/programming logos/java-script-logo.jpg" alt="">
-                        <img width="100" src="assets/programming logos/dart-logo.png" alt="">
-                        <img width="100" src="assets/programming logos/python-logo.jpg" alt="">
-                    </div></li>
-                    <li>Front End Wed Development</li>
-                    <li>Unity Development, Specializing in XR</li>
-                    <li>Figma, GitHub, PlasticSCM</li>
-                </ul>
-            </div>
+        <!--Skills list-->
+        <h3 id="skills-header">Skills</h3>
+        <div id="skills">
+            <p>C, C#, Javascript, HTML, CSS, and Python Programming languages</p>
+            <p>Front End Web Development</p>
+            <p>Unity Development, Specializing in XR</p>
+            <p>Microsoft + Google Suite, Figma, GitHub, PlasticSCM</p>
         </div>
 
-        <!--Footer-->
-        <footer id="footer">
-            <h3>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/jason-maingot/">https://www.linkedin.com/in/jason-maingot/</a><img class="link-icon" width="24" src="assets/images/external-link-icon.png" alt=""></h3>
-        </footer>
-    </body>
+        <!--Footer Stuff-->
+        <div id="linkedin-link">
+            <p>Get in touch</p>
+            <h1><a href="https://www.linkedin.com/in/jason-maingot/">LinkedIn</a></h1>
+        </div>
+        <p id="back-to-top"><a href="#banner">Back to top</a></p>
+    </div>
 
+</body>
 </html>
