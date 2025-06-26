@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Generator</title>
+
+    <link rel="stylesheet" href="Styles/default-styling.css">
+    <link rel="stylesheet" href="Styles/stress-generator.css">
+</head>
+<body>
+    
+    <!--The logo and navigation options, fixed on scroll-->
+    <div id="menu">
+        <h1><a href="index.html">&emsp;<span class="logo-white">{</span>Jason</a></h1>
+        <h1><a href="index.html">Maingot<span class="logo-white"> }</a></span></h1>
+        <br>
+        <h3><a href="projects.html">Projects</a></h3>
+        <h3><a href="about-me.html">About</a></h3>
+    </div>
+
+    <!--The colored banner at the top of the page and header-->
+    <div id="banner">
+        <div id="banner-grid">
+            <h1>Stress Generator</h1>
+        </div>
+    </div>
+
+    <!--The main content of the page arrnged on a 12 column grid-->
+    <div id="grid">
+
+        <p id="overview-header">Overview</p>
+        <p id="overview1"><strong>Stress Generator</strong> is a simulated rope bridge crossing created to help researchers trigger and study stress responses using the <strong>HP Omnicept headset.</strong> The system captures real-time biometric data and researcher annotations, providing detailed insights for later analysis.</p>
+        <p id="overview2">The simulation was developed in collaboration with the <strong>University of Miami’s Virtual Experience and Simulation Lab (VESL)</strong> and <strong>Dr. Firdaus Dhabhar</strong>, a tenured professor in the Department of Psychiatry and Director of the Laboratory of Stress and Resilience in Health and Healing.</p>
+
+        <p id="role-header" class="spacer">Role</p>
+        <p id="role1" class="spacer"><strong>Project Lead and Lead Developer</strong></p>
+        <p id="role2">Joining the project as the <strong>Project Lead and primary developer</strong>, my responsibilities included:</p>
+        <ul id="role3">
+            <li>Planning and managing development sprints</li>
+            <li>Organizing regular check-ins with the Principal Investigator (PI)</li>
+            <li>Refactoring and upgrading core systems</li>
+            <li>Implementing new features and improving existing functionality</li>
+            <li>Ensuring the simulation was polished and stable for researcher use</li>
+        </ul>
+
+        <p id="milestones-header" class="spacer">Project Milestones</p>
+        <h3 id="milestones1" class="spacer">1) Revamping the Environment and Researcher UI</h3>
+        <p id="milestones2">The first phase of the project included transforming the <strong>particpant environment.</strong> The original bridge environment was too short, lacked depth, and was overall visually unconvincing. Based on feedback from the PI, I:</p>
+        <ul id="milestones3">
+            <li>Redesigned the canyon to be <strong>wider and deeper,</strong> enhancing its psychological impact</li>
+            <li>Introduced a <strong>more natural, less arid environment</strong> with a river, boulders, and foliage to deepen immersion</li>
+            <li>Added <strong>spatial audio</strong> for realism and depth</li>
+            <li>Balanced visual perspective to amplify height perception</li>
+        </ul>
+        <img id="milestones-picture1" class="half-picture spacer" src="Assets/Stress Generator/Old Canyon.PNG" alt="">
+        <img id="milestones-picture2" class="half-picture spacer" src="Assets/Stress Generator/New Canyon.PNG" alt="">
+        <p id="milestones4" class="spacer">The next goal was to modernize the <strong>researcher interface.</strong> Based on an upgraded Figma design, I:</p>
+        <ul id="milestones5">
+            <li>Recreated the UI in <strong>Unity</strong> with full interactivity</li>
+            <li>Integrated <strong>biometric data</strong> display and note-taking functionality</li>
+            <li>Ensured researcher annotations are saved in real time with the simulation data for analysis</li>
+        </ul>
+        <img id="milestones-picture3" class="half-picture spacer" src="Assets/Stress Generator/Stress Gen Figma UI.PNG" alt="">
+        <img id="milestones-picture4" class="half-picture spacer" src="Assets/Stress Generator/Stress Gen Unity UI.PNG" alt="">
+        <h3 id="milestones6" class="spacer">2) Integrating Advanced Environmental Controls</h3>
+        <p id="milestones7">To allow researchers greater control over participant experience, I implemented a suite of dynamic environmental tools, including:</p>
+        <ul id="milestones8">
+            <li><strong>Time of day:</strong> Toggle between day and night</li>
+            <li><strong>Weather effects:</strong> Switch between clear and rainy conditions</li>
+            <li><strong>Fog and wind levels:</strong> Adjustable in real time</li>
+            <li><strong>Dynamic canyon depth:</strong> Alter perceived height mid-simulation</li>
+            <li><strong>Bridge instability:</strong> Trigger falling rocks and breaking planks for heightened tension</li>
+        </ul>
+        <p id="milestones9">I also implemented a new feature where researchers could break bridge planks mid-crossing, introducing surprise elements to amplify stress. One major technical challenge involved ensuring Unity’s XR Toolkit properly synced physics between the participant and moving bridge elements, especially under strong wind forces.</p>
+        <video id="milestones-picture5" class="full-picture spacer" controls>
+            <source src="Assets/Stress Generator/Stress Gen Environmental Controls Demo.mp4" type="video/mp4">
+        </video>
+        <h3 id="milestones10" class="spacer">3) Enhancing Participant Mobility</h3>
+        <p id="milestones11">Originally, movement across the bridge was joystick-based. Based on a new requirement from the PI, I added support for <strong>real-world physical locomotion</strong> using the HP Omnicept controllers as trackers. This involved:</p>
+        <ul id="milestones12">
+            <li>Researching motion tracking options compatible with the Omnicept</li>
+            <li>Reworking the movement system to accommodate <strong>step-based locomotion</strong></li>
+            <li>Allowing researchers to select between joystick and physical movement modes</li>
+        </ul>
+
+        <p id="future-header" class="spacer">Future Development</p>
+        <p id="future1" class="spacer">Next steps for the team include finalizing mobility features, conducting user testing, and collecting stress-response data. Before handing off for further development, I:</p>
+        <ul id="future2">
+            <li>Created thorough technical documentation</li>
+            <li>Onboarded a new developer to ensure a smooth handoff</li>
+            <li>Provided guidance on remaining features and upcoming testing</li>
+        </ul>
+
+        <p id="takeaways-header" class="spacer">Takeaways</p>
+        <p id="takeaways1" class="spacer">Leading this project challenged me to connect big ideas with real-world execution and allowed me to put a wide range of key skills into action:</p>
+        <ul id="takeaways2">
+            <li><strong>Project management and team coordination</strong></li>
+            <li><strong>VR simulation design and 3D spatial reasoning</strong></li>
+            <li>Navigating the intricacies of <strong>real-time physics in XR environments</strong></li>
+            <li>Communicating with stakeholders across research and technical disciplines</li>
+        </ul>
+
+        <!--Footer Stuff-->
+        <div id="linkedin-link" class="spacer">
+            <p>Get in touch</p>
+            <h1><a href="https://www.linkedin.com/in/jason-maingot/">LinkedIn</a></h1>
+        </div>
+        <p id="back-to-top"><a href="#banner">Back to top</a></p>
+    </div>
+
+</body>
+</html>

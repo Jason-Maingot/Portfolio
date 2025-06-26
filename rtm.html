@@ -1,77 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jason Maingot Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Styles/styles.css">
-        <link rel="stylesheet" href="Styles/case-study.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return to Manufacturer</title>
+
+    <link rel="stylesheet" href="Styles/default-styling.css">
+    <link rel="stylesheet" href="Styles/rtm.css">
+</head>
+<body>
     
-    <!-- Body of Website -->
-    <body>
+    <!--The logo and navigation options, fixed on scroll-->
+    <div id="menu">
+        <h1><a href="index.html">&emsp;<span class="logo-white">{</span>Jason</a></h1>
+        <h1><a href="index.html">Maingot<span class="logo-white"> }</a></span></h1>
+        <br>
+        <h3><a href="projects.html">Projects</a></h3>
+        <h3><a href="about-me.html">About</a></h3>
+    </div>
 
-        <!-- Top Navigation Bar with Logo and Major Page Links -->
-        <nav>
-            <!-- My Logo -->
-            <a href="./index.html"><img src="assets/images/Logo.png" alt=""></a>
-            <div class="nav-seperator"></div>
-            <a href="./projects.html">PROJECTS</a>
-            <div class="nav-seperator"></div>
-            <a href="./about-me.html">ABOUT ME</a>
-            <div class="nav-seperator"></div>
-        </nav>
-
-        <!-- Main body of Landing Page -->
-        <div class="main-body">
-            <!-- Title -->
+    <!--The colored banner at the top of the page and header-->
+    <div id="banner">
+        <div id="banner-grid">
             <h1>Return to Manufacturer</h1>
-            <h2 class="title_caption">Game/Music Jam 2021 Submission</h2>
-
-            <img width="600px" src="assets/images/RTM logo.png" alt="">
-            <p class="image-caption">A the logo and start screen for the game.</p>
-
-            <h2 class="bolded">Overview & Role</h2>
-            <p>
-                &emsp;Return to Manufacturer was Team Retrograde’s submission for Game/Music Jam 2021—an event where developers had 48 hours to create a game based on a given prompt, followed by musicians having 48 hours to compose a soundtrack for it.
-            </p>
-            <p>
-                &emsp;I served as the <span class="bolded">lead developer and programmer</span> for the project. In addition to implementing core systems, I contributed extensively to gameplay and systems design. The rest of our four-person team included specialists in level design, art, and general game design.
-            </p>
-            <p>
-                &emsp;The event’s prompt was <span class="bolded">“Return”</span>, which inspired the game’s theme and mechanics. We created a gameplay loop centered around retrieving and delivering packages, featuring a unique forward-and-backward dash ability and a boomerang as the player’s main weapon—both literal interpretations of the prompt.
-            </p>
-            <h2 class="bolded">Team Collaboration & Time Management</h2>
-            <p>
-                &emsp;The greatest challenge was the strict 48-hour time limit—and starting from scratch with a team of mostly strangers. We began by introducing ourselves, outlining individual skill sets, and assigning roles. I was chosen to lead development due to my familiarity with programming and game engines. We decided to use Unity for its flexibility and my prior experience with it.
-                We spent the first few hours scoping out ideas and setting realistic goals. From there, we worked continuously while staying in a persistent voice call to ensure quick communication and tight feedback loops. I frequently worked with the designer to scale back or adjust features in order to meet the deadline without sacrificing quality.
-            </p>
-
-            <img class="single-picture" src="assets/gifs/rtm gif.gif" alt="">
-            <p class="image-caption">A short clip of gameplay</p>
-
-            <h2 class="bolded">What I Learned</h2>
-            <ul>
-                <li><span class="bolded">Time management</span> under pressure and how to prioritize essential tasks</li>
-                <li><span class="bolded">Communicating technical limitations</span> clearly to non-technical teammates</li>
-                <li><span class="bolded">Rapid learning and problem-solving</span>—I had to quickly pick up Unity's animation system</li>
-                <li>Gained experience with <span class="bolded">game and level design</span>, both in giving feedback and contributing ideas</li>
-            </ul>
-            <h2 class="bolded">Next Steps</h2>
-            <p>
-                &emsp;After the jam, we published the game on itch.io. While the team doesn’t plan to continue development on this version, we’ve discussed possibly collaborating again—this time without a time limit, using Return to Manufacturer as creative inspiration.
-            </p>
-            <div><p>Check out the Game Jam Submission <a href="https://team-retrograde.itch.io/return-to-manufacturer-2021">here!</a><img class="link-icon" width="24" src="assets/images/external-link-icon.png" alt=""></p></div>
-            <h3 class="nextButton"><a href="./stress-gen.html">See Next Project -></a></h3>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <h3>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/jason-maingot/">https://www.linkedin.com/in/jason-maingot/</a><img class="link-icon" width="24" src="assets/images/external-link-icon.png" alt=""></h3>
-        </footer>
-    </body>
+    <!--The main content of the page arrnged on a 12 column grid-->
+    <div id="grid">
 
+        <p id="overview-header">Overview</p>
+        <p id="overview1"><strong>Return to Manufacturer</strong> was built as a result of Game/Music Jam 2021—a 48-hour event where developers and musicians collaborate to create a fully functional game paired with an original soundtrack.</p>
+        <p id="overview2">I served as <strong>lead developer and programmer,</strong> implementing the game's core systems and contributing heavily to gameplay and systems design. Our four-person team also included specialists in level design, art, and overall game design.</p>
+        <p id="overview3">The event’s prompt, <strong>"Return,"</strong> directly shaped our theme and mechanics. We designed a gameplay loop centered around retrieving and delivering packages, with a unique forward-and-backward dash mechanic and a boomerang as the primary weapon—both literal twists on the idea of return.</p>
+        <video id="overview-picture1" class="half-picture spacer" controls>
+            <source src="Assets/RTM/RTM Clip 1.mp4" type="video/mp4">
+        </video>
+        <video id="overview-picture2" class="half-picture spacer" controls>
+            <source src="Assets/RTM/RTM Clip 2.mp4" type="video/mp4">
+        </video>
+
+        <p id="takeaways-header" class="spacer">Takeaways</p>
+        <p id="takeaways1" class="spacer">The biggest challenge was the strict 48-hour time limit—plus starting from scratch with a team of mostly strangers. After outlining our skills and assigning roles, I was chosen to lead development based on my programming and engine experience. We picked Unity for its flexibility and my familiarity with the platform.</p>
+        <p id="takeaways2">We quickly scoped ideas, set realistic goals, and stayed in constant communication through a nonstop live working session, keeping decision-making and feedback fast and efficient. Throughout the project, I worked closely with the designer to adjust and scale features, making sure we hit the deadline without sacrificing quality. Key learnings include:</p>
+        <ul id="takeaways3">
+            <li><strong>Managing time</strong> under extreme pressure and prioritizing essential tasks</li>
+            <li><strong>Communicating technical limitations clearly to non-technical teammates</strong></li>
+            <li><strong>Rapid learning and problem-solving,</strong> including quickly mastering Unity’s animation system</li>
+            <li>Building hands-on experience with <strong>game and level design,</strong> from contributing ideas to giving actionable feedback</li>
+        </ul>
+
+        <p id="playtest-header" class="spacer">Play Test</p>
+        <p id="playtest1" class="spacer">Return to Manufacturer is currently published to itch.io. Check it out!</p>
+
+        <!--Footer Stuff-->
+        <div id="linkedin-link">
+            <p>Get in touch</p>
+            <h1><a href="https://www.linkedin.com/in/jason-maingot/">LinkedIn</a></h1>
+        </div>
+        <p id="back-to-top"><a href="#banner">Back to top</a></p>
+    </div>
+
+</body>
 </html>

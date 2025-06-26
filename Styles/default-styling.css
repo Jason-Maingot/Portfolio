@@ -1,0 +1,118 @@
+/* Default styling on all pages, mainly the logo and font used - SHOULD ALWAYS BE FIRST SO IT CAN BE OVERWRITTEN IF NEEDED */
+
+/* Reset all margins on start*/
+body {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+/* Keep the logo n the corner of the screen scaling with viewport size*/
+#menu {
+    position: fixed;
+    top: 3.1vw;
+    left: 4.6153vw;
+    text-align: left;
+}
+
+/* Logo*/
+#menu > h1 {
+    font-size: 5vw;
+    margin: 0;
+    color: rgb(89, 201, 67);
+    line-height: .8;
+    letter-spacing: -.3vw;
+}
+
+/* For the parenthesis*/
+.logo-white {
+    color: white;
+}
+
+/* For the Project and About Me links*/
+#menu > h3 {
+    font-size: 2vw;
+    margin: 0;
+    color: rgb(89, 201, 67);
+}
+
+/* Dont change link color or decoration on click*/
+a {
+    all: unset;
+}
+a:hover {
+  cursor: pointer;
+}
+
+
+/* Grid for placing page header*/
+#banner-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 6.1538vw);
+    column-gap: 1.538vw;
+    row-gap: 16px;
+    max-width: 100vw;
+    margin: 0 4.6153vw;
+}
+
+/* The grid where the pages main content is displayed*/
+#grid {
+    display: grid;
+    grid-template-columns: repeat(12, 6.1538vw);
+    column-gap: 1.538vw;
+    row-gap: 16px;
+    max-width: 100vw;
+    margin: 0 4.6153vw;
+    margin-top: 10vw;
+}
+
+/* Footer Stuff - Need to override column-row value for some*/
+#linkedin-link {
+    grid-column: 1 / 4;
+    text-align: left;
+    font-size: 1.8vw;
+}
+
+#linkedin-link > p {
+    margin-bottom: 0;
+}
+
+#linkedin-link > h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#back-to-top {
+    grid-column: 11 / 13;
+    text-align: left;
+    font-size: 1.8vw;
+    align-self: flex-end;
+}
+
+#linkedin-link, #back-to-top {
+    margin-bottom: 5vw;
+}
+
+
+/* Default font*/
+p, h1, h3, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.spacer {
+    margin-top: 3vw;
+}
+
+.half-picture {
+    width: 44.6153vw;
+    height: auto;
+}
+
+.full-picture {
+    width: 60vw;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}

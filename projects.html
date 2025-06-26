@@ -1,63 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Jason Maingot Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Styles/styles.css">
-        <link rel="stylesheet" href="Styles/projects.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <link rel="stylesheet" href="Styles/default-styling.css">
+    <link rel="stylesheet" href="Styles/projects.css">
+</head>
+<body>
     
-    <!-- Body of Website -->
-    <body>
+    <!--The logo and navigation options, fixed on scroll-->
+    <div id="menu">
+        <h1><a href="index.html">&emsp;<span class="logo-white">{</span>Jason</a></h1>
+        <h1><a href="index.html">Maingot<span class="logo-white"> }</a></span></h1>
+        <br>
+        <h3><a href="projects.html">Projects</a></h3>
+        <h3><a href="about-me.html">About</a></h3>
+    </div>
 
-        <!-- Top Navigation Bar with Logo and Major Page Links -->
-        <nav>
-            <!-- My Logo -->
-            <a href="./index.html"><img src="assets/images/Logo.png" alt=""></a>
-            <div class="nav-seperator"></div>
-            <a href="./projects.html">PROJECTS</a>
-            <div class="nav-seperator"></div>
-            <a href="./about-me.html">ABOUT ME</a>
-            <div class="nav-seperator"></div>
-        </nav>
+    <!--The colored banner at the top of the page and header-->
+    <div id="banner">
+        <div id="banner-grid">
+            <h1>Featured Projects</h1>
+        </div>
+    </div>
 
-        <!-- Main body of Landing Page -->
-        <div class="main-body">
-            <!-- Top part of page with introduction text -->
+    <!--The main content of the page arrnged on a 12 column grid-->
+    <div id="grid">
 
-            <!-- Projects gallery -->
-            <h1 class="gallery-header">All Projects</h1>
-            <div class="project-gallery">
-                <a href="./stress-gen.html" class="project-card">
-                    <img src="assets/stress-gen/Stress Gen In Simulation.PNG" alt="">
-                    <h3>Stress Generator</h3>
-                </a>
-                <a href="./weather-app.html" class="project-card">
-                    <img src="assets/images/WeatherAppCurrent.PNG" alt="">
-                    <h3>Jason's Weather App</h3>
-                </a>
-                <a href="./rtm.html" class="project-card">
-                    <img src="assets/images/RTM logo.png" alt="">
-                    <h3>Return To Manufacturer</h3>
-                </a>
-            </div>
-            <div class="wip-message">
-                <h2>
-                    This Portfolio Website is currently a Work In Progress. Please visit again as I add new projects and update the site.
-                    The last update was on 5/6/25
-                </h2>
-            </div>
-
+        <!--Featured Projects-->
+        <img class="project-thumbnail" id="thumbnail1" src="Assets/Stress Generator/Stress Gen Thumbnail.jpg" alt="">
+        <div class="project-caption" id="project-caption1">
+            <p class="project-caption-header"><a href="stress-generator.html">Stress Generator</a></p>
+            <p>Developed a simulated rope bridge crossing to help researchers trigger and study stress responses using the HP Omnicept headset. The system captures real-time biometric data and researcher annotations, providing detailed insights for later analysis.</p>
+        </div>
+        <img class="project-thumbnail" id="thumbnail2" src="Assets/Slit Lamp/Slit Lamp Thumbnail.JPG" alt="">
+        <div class="project-caption" id="project-caption2">
+            <p class="project-caption-header"><a href="slit-lamp.html">Slit Lamp Simulator</a></p>
+            <p>Created a virtual version of a slit lamp, a critical diagnostic tool used by ophthalmologists, to give medical students hands-on practice in a virtual environment. Because physical slit lamps are often in use and hard to access, this simulation lets students train more often and with more flexibility.</p>
+        </div>
+        <img class="project-thumbnail" id="thumbnail3" src="Assets/RTM/RTM Thumbnail.PNG" alt="">
+        <div class="project-caption" id="project-caption3">
+            <p class="project-caption-header"><a href="rtm.html">Return to Manufacturer</a></p>
+            <p>Led the design and development of a fast-paced delivery game featuring a boomerang weapon and a forward-and-backward dash mechanic—all within 48 hours. Submission for Game/Music Jam 2021.</p>
         </div>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <h3>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/jason-maingot/">https://www.linkedin.com/in/jason-maingot/</a><img class="link-icon" width="24" src="assets/images/external-link-icon.png" alt=""></h3>
-        </footer>
-    </body>
+        <!--Footer Stuff-->
+        <div id="linkedin-link">
+            <p>Get in touch</p>
+            <h1><a href="https://www.linkedin.com/in/jason-maingot/">LinkedIn</a></h1>
+        </div>
+        <p id="back-to-top"><a href="#banner">Back to top</a></p>
+    </div>
 
+</body>
 </html>
